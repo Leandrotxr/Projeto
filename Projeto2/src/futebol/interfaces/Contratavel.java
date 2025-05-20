@@ -1,6 +1,5 @@
 package futebol.interfaces;
 
-import futebol.pessoa_fisica.Pessoa;
 import futebol.pessoa_juridica.Equipe;
 import futebol.pessoa_juridica.Federacao;
 

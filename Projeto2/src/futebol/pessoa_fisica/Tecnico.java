@@ -7,8 +7,8 @@ public class Tecnico extends Pessoa implements Contratavel {
 
     private String nacionalidade;
 
-    public Tecnico(String nome, int idade, String nacionalidade) {
-        super(nome, idade);
+    public Tecnico(String nome, int idade, int cpf, String nacionalidade) {
+        super(nome, idade, cpf);
         this.nacionalidade = nacionalidade;
     }
 

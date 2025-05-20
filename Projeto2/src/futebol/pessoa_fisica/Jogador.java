@@ -8,8 +8,8 @@ public class Jogador extends Pessoa implements Contratavel {
     private String nacionalidade;
     private String posicao;
 
-    public Jogador(String nome, int idade, String nacionalidade, String posicao) {
-        super(nome, idade);
+    public Jogador(String nome, int idade, int cpf, String nacionalidade, String posicao) {
+        super(nome, idade, cpf);
         this.nacionalidade = nacionalidade;
         this.posicao = posicao;
     }

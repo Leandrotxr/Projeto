@@ -1,5 +1,6 @@
 package futebol.pessoa_juridica;
 
+import futebol.campeonatos.Campeonato;
 import futebol.pessoa_fisica.Jogador;
 import futebol.pessoa_fisica.Tecnico;
 
@@ -14,6 +15,7 @@ public class Equipe extends Empresa{
     private Tecnico tecnico;
     private List<Patrocinador> lista_patrocinadores = new ArrayList<>();
     private List<Integer> valor_patrocinadores = new ArrayList<>();
+    private List<Campeonato> lista_campeonatos = new ArrayList<>();
 
     public Equipe(String nome,int cnpj, int fundacao, String sede) {
         super(nome,cnpj);
@@ -33,6 +35,12 @@ public class Equipe extends Empresa{
         lista_patrocinadores.add(patrocinador);
         valor_patrocinadores.add(valor);
         patrocinador.adicionarEquipe(this);
+    }
+
+    public void adicionarCampeonato(Campeonato campeonato) {
+        lista_campeonatos.add(campeonato);
+        campeonato.adicionarEquipe(this);
+        System.out.println("Campeonato adicionado com sucesso!");
     }
 
     public void mostrarInfo(){
