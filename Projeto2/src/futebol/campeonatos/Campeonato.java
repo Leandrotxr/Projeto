@@ -22,18 +22,18 @@ public class Campeonato {
 
     public void adicionarFederacao(Federacao federacao) {
         this.federacao = federacao;
+        federacao.adicionarCampeonato(this);
     }
 
     public void adicionarEquipe(Equipe equipe) {
         lista_equipes.add(equipe);
-        System.out.println("Equipe adicionado com sucesso!");
     }
 
     public void mostrarInformacoes() {
         System.out.println("Nome: " + nome);
         System.out.println("Premio: " + premio);
         System.out.println("Local: " + local);
-        System.out.println("Federacao: " + federacao);
+        System.out.println("Federacao: " + federacao.getNome());
         System.out.println("Lista equipes: ");
         for(Equipe equipe : lista_equipes) {
             System.out.println("Equipe " + equipe.getNome());

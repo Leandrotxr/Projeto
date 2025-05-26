@@ -15,13 +15,12 @@ public class Arbitro extends Pessoa implements Contratavel {
     public void contratar(Federacao federacao){
         this.federacao = federacao;
         federacao.adicionarArbitro(this);
-        System.out.println("Arbitrado com sucesso!");
     }
 
     public void mostrarInformacoes(){
         System.out.println("Nome: " + nome);
         System.out.println("Idade: " + idade);
         System.out.println("CPF: " + cpf);
-        System.out.println("Federacao: " + federacao);
+        System.out.println("Federacao: " + federacao.getNome());
     }
 }

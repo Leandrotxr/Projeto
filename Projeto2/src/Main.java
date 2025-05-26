@@ -183,6 +183,12 @@ public class Main {
         equipe4.mostrarInfo();
         equipe5.mostrarInfo();
 
+        System.out.println();
+        campeonato2.mostrarInformacoes();
+        System.out.println();
+        arbitro3.mostrarInformacoes();
+        System.out.println();
+        federacao2.mostrarInformacoes();
 
     }
 }

@@ -17,13 +17,10 @@ public class Federacao extends Empresa{
 
     public void adicionarArbitro(Arbitro arbitro) {
         lista_arbitro.add(arbitro);
-        System.out.println("Adicionado arbitro: " + arbitro.getNome());
     }
 
     public void adicionarCampeonato(Campeonato campeonato) {
         lista_campeonato.add(campeonato);
-        campeonato.adicionarFederacao(this);
-        System.out.println("Campeonato adicionado");
     }
 
     public void mostrarInformacoes() {
@@ -33,6 +30,7 @@ public class Federacao extends Empresa{
         for (Arbitro arbitro : lista_arbitro) {
             System.out.println("Nome: " + arbitro.getNome());
         }
+        System.out.println("Lista de campeonatos: ");
         for(Campeonato campeonato : lista_campeonato){
             System.out.println("Nome: " + campeonato.getNome());
         }

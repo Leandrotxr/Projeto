@@ -40,7 +40,6 @@ public class Equipe extends Empresa{
     public void adicionarCampeonato(Campeonato campeonato) {
         lista_campeonatos.add(campeonato);
         campeonato.adicionarEquipe(this);
-        System.out.println("Campeonato adicionado com sucesso!");
     }
 
     public void mostrarInfo(){
@@ -57,6 +56,9 @@ public class Equipe extends Empresa{
         for (int i = 0; i < valor_patrocinadores.size(); i++) {
             System.out.println("Nome: " + lista_patrocinadores.get(i).getNome());
             System.out.println("Valor: " + valor_patrocinadores.get(i));
+        }
+        for(Campeonato campeonato : lista_campeonatos) {
+            System.out.println("Nome: " + campeonato.getNome());
         }
     }
 }
