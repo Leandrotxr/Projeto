@@ -12,7 +12,7 @@ public class Patrocinador extends Empresa implements Contratavel {
     @Override
     public void contratar(Equipe equipe, int valor) {
         equipe.adicionarPatrocinador(this, valor);
-        System.out.println("Patrocinador contrado com sucesso!");
+        System.out.println(this.nome + " foi contratado por " + equipe.getNome() + " com sucesso!");
     }
 
     public Patrocinador(String nome, int cnpj) {

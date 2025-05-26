@@ -12,7 +12,7 @@ public class Campeonato {
     private int premio;
     private String local;
     private Federacao federacao;
-    private List<Equipe> lista_equipes = new ArrayList<Equipe>();
+    private List<Equipe> lista_equipes = new ArrayList<>();
 
     public Campeonato(String nome, String local, int premio) {
         this.nome = nome;

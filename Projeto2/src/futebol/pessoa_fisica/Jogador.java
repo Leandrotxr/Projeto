@@ -17,7 +17,7 @@ public class Jogador extends Pessoa implements Contratavel {
     @Override
     public void contratar(Equipe equipe){
         equipe.adcionaJogador(this);
-        System.out.println(this.nome + " foi contratado com sucesso!");
+        System.out.println(this.nome + " foi contratado por " + equipe.getNome() + " com sucesso!");
     }
 
     public String getNacionalidade() {

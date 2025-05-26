@@ -15,6 +15,6 @@ public class Tecnico extends Pessoa implements Contratavel {
     @Override
     public void contratar(Equipe equipe) {
         equipe.adcionaTecnico(this);
-        System.out.println(this.nome + " foi contratado com sucesso!");
+        System.out.println(this.nome + " foi contratado por " + equipe.getNome() + " com sucesso!");
     }
 }
