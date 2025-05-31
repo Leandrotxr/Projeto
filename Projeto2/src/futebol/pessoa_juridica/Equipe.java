@@ -57,6 +57,7 @@ public class Equipe extends Empresa{
             System.out.println("Nome: " + lista_patrocinadores.get(i).getNome());
             System.out.println("Valor: " + valor_patrocinadores.get(i));
         }
+        System.out.println("Lista campeonatos: ");
         for(Campeonato campeonato : lista_campeonatos) {
             System.out.println("Nome: " + campeonato.getNome());
         }
